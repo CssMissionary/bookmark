@@ -1,0 +1,454 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1,h2,h3{
+    color: rgb(2, 2, 41);
+}
+p{
+    color: rgba(1, 1, 24, 0.398);
+}
+.logo{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 100px;
+}
+.hero-links{
+    display: none;
+}
+.hamburger{
+    cursor: pointer;
+}
+.hero-img{
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    width: 350px;
+    height: 250px;
+}
+.hero__left{
+    position: relative;
+    margin-left: 50px;
+    width: 325px;
+    height: 220px;
+    background-color: rgba(0, 0, 255, 0.529);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.hero__right{
+    margin-top: 50px;
+}
+.hero__right h1{
+    text-align: center;
+}
+.hero__right p{
+    margin-top: 10px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 50px;
+    line-height: 28px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.button_primary:hover,.button_extension:hover{
+    background-color: white;
+    color: rgba(0, 0, 255, 0.529);
+    border: 2px solid rgba(0, 0, 255, 0.529);
+}
+.button_secondary:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.button_primary,
+.button_secondary{
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.529);
+    box-shadow: 0 6px 6px rgba(0, 0, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.button_secondary{
+    background-color: rgba(186, 182, 182, 0.241);
+    box-shadow: 0 6px 6px rgba(186, 182, 182, 0.652);
+    color: black;
+}
+.features{
+    text-align: center;
+    margin-top: 100px;
+}
+.feature h1{
+    font-size: 26px;
+}
+.features p{
+    margin-top: 20px;
+    padding: 0 45px;
+    line-height: 28px;
+}
+.tabs{
+    margin: 40px 0;
+    text-align: center;
+}
+.tab1,.tab2,.tab3{
+    margin: 0 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.357);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.357);
+    padding-top: 10px;
+    cursor: pointer;
+}
+.tab1:hover h3,.tab2:hover h3,.tab3:hover h3{
+    color: red;
+}
+.tab2{
+    border-top: 0;
+    padding-bottom: 0px;
+    padding-top: 0;
+    margin-top: -10px;
+}
+.tab3{
+    border-top: 0;
+    margin-top: -20px;
+}
+.active{
+    border-bottom: 3px solid red;
+}
+.tab-contents{
+    margin: 80px 0;
+}
+.feature .button_primary{
+    display: none;
+    margin-top: 20px;
+}
+.content1, .content2,.content3{
+    display: flex;
+    flex-direction: column;
+}
+.content1-frame,
+.content2-frame,
+.content3-frame{
+    position: relative;
+    background-color: rgba(0, 0, 255, 0.529);
+    width: 300px;
+    height: 230px;
+    border-bottom-right-radius: 100px;
+}
+.content1-frame img,
+.content2-frame img,
+.content3-frame img{
+    position: absolute;
+    top: -20px;
+    left: 40px;
+   width: 300px;
+    height: 220px;
+}
+.content2-frame{
+    width: 250px;
+}
+.content3-frame{
+    width: 270px;
+}
+.feature{
+    margin: 40px 0;
+    text-align: center;
+}
+.feature h1{
+    margin: 20px 0;
+}
+.feature p{
+    padding: 0 40px;
+    line-height: 28px;
+}
+
+.close{
+    display: none;
+}
+.extension{
+    text-align: center;
+    padding: 0 6px;
+}
+.extension h1{
+    font-size: 26px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.extension p{
+    padding: 0 40px;
+    line-height: 28px;
+}
+.browsers{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.chrome{
+    width: 250px;
+    height: 320px;
+    box-shadow: 0 6px 6px rgba(186, 182, 182, 0.652);
+    margin-bottom: 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chrome h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.chrome p{
+    margin-bottom: 30px;
+}
+.install{
+    border-top: dotted rgba(128, 128, 128, 0.433);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.button_extension{
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(0, 0, 255, 0.529);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.questions-header{
+    margin-top: 40px;
+    text-align: center;
+}
+.questions-header h1{
+    font-size: 26px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+.questions-header p{
+    padding: 0 40px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+.question-1,
+.question-2,
+.question-3,
+.question-4{
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.446);
+}
+.question-1 .header h2,
+.question-2 .header h2,
+.question-3 .header h2,
+.question-4 .header h2
+{
+    transform: rotate(90deg);
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+}
+.question-1 .answer-1,
+.question-2 .answer-2,
+.question-3 .answer-3,
+.question-4 .answer-4{
+    margin: 20px 0;
+    line-height: 28px;
+    color: rgba(1, 1, 24, 0.398);
+    padding-right: 10px;
+}
+.question-1 .header,
+.question-2 .header,
+.question-3 .header,
+.question-4 .header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.open{
+    display: block;
+}
+.reverse{
+    transform: rotate(180deg) !important;
+}
+.info-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.info{
+    width: 100px;
+    cursor: pointer;
+}
+.update{
+    height: 350px;
+    background-color: rgba(2, 2, 196, 0.665);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.update h4{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.update h2{
+    color: white;
+    margin-bottom: 40px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.contact input,
+.button_contact{
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.button_contact{
+    padding: 0;
+    cursor: pointer;
+}
+.button_contact{
+    background-color: rgb(238, 61, 61);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.button_contact:hover{
+    background-color: white;
+    color: rgb(238, 61, 61);
+    border: 2px solid rgb(238, 61, 61);
+}
+footer{
+    height: 320px;
+    background-color: rgb(3, 3, 49);
+    text-align: center;
+
+}
+.footer-logo{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.links{
+    list-style: none;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+}
+.links a:hover{
+    color: rgb(238, 61, 61);
+}
+.links li{
+    margin-bottom: 30px;
+}
+.socials{
+    margin-top: 40px;
+}
+.socials img{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.menu{
+    position: fixed;
+  display: none;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #140d31d0;
+  overflow-y: auto;
+}
+.menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+}
+.logo-modal{
+    margin-left: -10px;
+}
+.menu .lists{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.menu .lists li{
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.268);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .lists a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.menu .lists a:hover{
+    border: 2px solid white;
+    padding: 10px 80px;
+    border-radius: 5px;
+}
+.menu .socials{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials img:hover{
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
+.open{
+    display: block;
+}
+.arr1,.arr2,.arr3,.arr4{
+    cursor: pointer;
+}
+.close-modal{
+    cursor: pointer;
+} 

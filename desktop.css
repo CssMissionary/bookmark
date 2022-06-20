@@ -1,0 +1,196 @@
+header{
+    align-items: center;
+}
+.logo{
+    margin-left: 100px;
+}
+.hamburger{
+    display: none;
+}
+.hero-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.hero-links a{
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 600;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero-links a:hover{
+    color: rgb(238, 61, 61);
+}
+header .button_contact{
+    padding-left: 15px;
+    padding-top: 6px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.hero-section{
+    display: flex;
+}
+.hero-section .hero__left{
+    order: 2;
+}
+.hero__right{
+   width: 50%;
+   text-align: left;
+   margin-left: 60px;
+}
+.hero__right h1{
+    text-align: left;
+    margin-left: 70px;
+}
+.hero__left{
+    margin-top: 80px;
+    margin-left: 260px;
+    height: 300px;
+    width: 500px;
+}
+.hero__left .hero-img{
+    top: -100px;
+    left: -100px;
+    width: 500px;
+    height: 400px;
+}
+.features p, .extension p{
+    padding: 0 460px;
+}
+.questions-header{
+    padding: 0 430px;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab1, .tab2 , .tab3{
+    border-top: none;
+    margin: 0;
+    width: 400px;
+}
+
+.tab2{
+    margin-top: 10px;
+    width: 400px;
+}
+
+.tab1 h3, .tab2 h3, .tab3 h3{
+   padding-bottom: 30px;
+}
+.content1, .content2, .content3{
+  flex-direction: row;
+}
+.content1 img,
+.content2 img,
+.content3 img{
+    width: 500px;
+    height: 330px;
+    left: 100px;
+}
+.content2 img{
+    height: 400px;
+    top: -40px;
+    left: 150px;
+    width: 550px;
+}
+.content1-frame,
+.content2-frame,
+.content3-frame
+{
+    margin-top: 50px;
+    width: 900px;
+    height: 350px;
+}
+
+.content1 .feature,
+.content2 .feature,
+.content3 .feature{
+    margin-left: 400px;
+    margin-top: 100px;
+    text-align: left;
+}
+.content1 .feature p,
+.content2 .feature p,
+.content3 .feature p{
+ margin-right: 100px;
+ margin-left: -40px;
+
+}
+.content2 .feature p{
+    text-align: left;
+}
+
+.content2 .feature h1{
+    margin-right: 80px;
+}
+.feature .button_primary{
+    display: block;
+}
+.browsers{
+    flex-direction: row;
+    margin: 0;
+}
+.firefox{
+    margin-top: 100px;
+}
+.opera{
+    margin-top: 200px;
+}
+.chrome{
+    margin-right: 40px;
+}
+.question-1,
+.question-2,
+.question-3,
+.question-4{
+  margin: 40px 400px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.contact input{
+    width: 300px;
+}
+.contact .button_contact{
+    margin-left: 20px;
+    width: 100px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+}
+.footer-logo{
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+footer .links{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+footer .links li{
+    margin: 0;
+}
+footer .links li a{
+    margin-right: 40px;
+}
+.socials{
+    margin-top: 0;
+}
+footer .socials{
+    margin-left: 500px;
+}
